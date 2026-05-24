@@ -6,9 +6,14 @@
 }
 
 body{
-  background:#0b0b12;
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
   color:white;
   min-height:100vh;
+
+  background: url("minecraft-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 header{
