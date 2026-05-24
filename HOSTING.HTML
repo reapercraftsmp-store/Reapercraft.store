@@ -3,53 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reapercraft | Hosting Plans</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Reapercraft | High-Performance Hosting</title>
+    <!-- Fonts aur Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; }
-        body { background-color: var(--bg-dark); color: var(--text-light); padding-top: 100px; }
-        
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
-        .logo span { color: var(--primary); }
-        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
-        nav a:hover, nav a.active { color: var(--primary); }
-
-        section { padding: 50px 5%; text-align: center; }
-        section h1 { font-size: 2.5rem; text-transform: uppercase; margin-bottom: 15px; }
-        section h1 span { color: var(--primary); }
-        .subtitle { color: var(--text-gray); font-size: 1.1rem; margin-bottom: 40px; }
-
-        /* 6 Cards Grid System */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 20px; }
-        .card { background: var(--bg-card); border: 2px solid #2a2a35; border-radius: 12px; padding: 35px 20px; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
-        .card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 8px 25px rgba(207, 21, 43, 0.25); }
-        
-        /* Popular Tag for Best Selling Plan */
-        .popular-tag { background: var(--primary); color: white; font-size: 0.75rem; font-weight: bold; padding: 5px 20px; position: absolute; top: 15px; right: -20px; transform: rotate(45deg); text-transform: uppercase; }
-
-        .card i.plan-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
-        .card h3 { font-size: 1.5rem; text-transform: uppercase; margin-bottom: 5px; }
-        .badge { display: inline-block; background: #2a2a35; color: var(--text-gray); font-size: 0.75rem; padding: 2px 10px; border-radius: 20px; margin-bottom: 15px; font-weight: 600; }
-        
-        .price { font-size: 2.3rem; font-weight: 800; color: #fff; margin: 10px 0; }
-        .price span { font-size: 1rem; color: var(--text-gray); font-weight: 400; }
-
-        .features { list-style: none; text-align: left; margin: 20px 0; font-size: 0.9rem; color: var(--text-gray); border-top: 1px solid #2a2a35; padding-top: 20px; }
-        .features li { margin-bottom: 12px; display: flex; align-items: center; }
-        .features li i { color: #2ecc71; margin-right: 10px; font-size: 1rem; }
-
-        .btn { display: block; padding: 12px; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; text-transform: uppercase; transition: 0.3s; text-align: center; margin-top: auto; letter-spacing: 1px; }
-        .btn:hover { background: #b01021; box-shadow: 0 4px 12px rgba(207, 21, 43, 0.4); }
-
-        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 60px; }
-        @media (max-width: 900px) { nav { display: none; } }
-    </style>
+    
+    <!-- Aapki main style.css ka link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- NAVIGATION HEADER -->
     <header>
         <div class="logo">Reaper<span>craft</span></div>
         <nav>
@@ -62,113 +26,204 @@
         </nav>
     </header>
 
-    <section>
-        <h1>High-Performance <span>Minecraft Hosting</span></h1>
-        <p class="subtitle">Apna budget server banayein lag-free hardware aur 24/7 support ke sath.</p>
-
-        <!-- 6 SERVER HOSTING PLANS -->
-        <div class="grid">
+    <!-- HOSTING SECTION -->
+    <section style="padding: 120px 20px 60px 20px; max-width: 1400px; margin: auto;">
+        <h1 style="text-align: center; font-size: 3rem; font-weight: 900; text-transform: uppercase; margin-bottom: 50px; text-shadow: 2px 2px 0px #000;">Reapercraft <span>Game Server Hosting</span></h1>
+        
+        <div class="store-sections">
             
-            <!-- Plan 1: Pocket Plan (The 120rs Starter) -->
-            <div class="card">
-                <i class="fas fa-seedling plan-icon"></i>
-                <h3>Dirt Plan</h3>
-                <span class="badge">Pocket Friendly</span>
-                <div class="price">₹119<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 2 GB DDR4 RAM</li>
-                    <li><i class="fas fa-check"></i> 100% CPU (1 Core)</li>
-                    <li><i class="fas fa-check"></i> 20 GB NVMe SSD</li>
-                    <li><i class="fas fa-check"></i> Java & Bedrock Support</li>
-                    <li><i class="fas fa-check"></i> 24/7 Online</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
+            <!-- ================= JAVA EDITION HOSTING (7 PLANS) ================= -->
+            <div class="store-box" style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; font-weight: 800; text-transform: uppercase; border-left: 5px solid #cf152b; padding-left: 15px; margin-bottom: 30px; color: #fff;"><i class="fab fa-java" style="color: #cf152b; margin-right: 10px;"></i> Java Edition Plans (Ryzen 9 Tech)</h2>
+                
+                <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px;">
+                    
+                    <!-- Java Plan 1 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">Dirt Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #cf152b;">₹119<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 2 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 20 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> 10 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 2 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">Iron Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹229<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 4 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 40 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> 25 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 3 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">Gold Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹349<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 6 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 60 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> 50 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 4 (Best Value Highlighted) -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.85); backdrop-filter: blur(10px); border: 2px solid #cf152b; padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 15px 40px rgba(207, 21, 43, 0.2); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: -25px; background: #cf152b; color: #fff; font-size: 0.6rem; font-weight: 800; text-transform: uppercase; padding: 3px 25px; transform: rotate(45deg);">Popular</div>
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #cf152b;">Diamond Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹459<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 8 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 80 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> 80 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 5 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">Emerald Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹679<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 12 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 120 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> 150 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 6 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">Netherite Plan</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹899<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #cf152b; margin-right: 5px;"></i> 16 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #cf152b; margin-right: 5px;"></i> 160 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #cf152b; margin-right: 5px;"></i> Unlimited Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Java Plan 7 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.8); backdrop-filter: blur(10px); border: 2px solid #f1c40f; padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 15px 40px rgba(241, 196, 15, 0.15);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #f1c40f;">Reaper God</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #f1c40f;">₹1,199<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #f1c40f; margin-right: 5px;"></i> Dedicated 24GB</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #f1c40f; margin-right: 5px;"></i> 250 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-shield-alt" style="color: #f1c40f; margin-right: 5px;"></i> Enterprise DDoS Protection</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #f1c40f; color: #000; font-size: 0.85rem; padding: 12px; font-weight: 800;">Order Now</a>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Plan 2: Budget Plan -->
-            <div class="card">
-                <i class="fas fa-cube plan-icon"></i>
-                <h3>Stone Plan</h3>
-                <span class="badge">Budget Value</span>
-                <div class="price">₹219<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 4 GB DDR4 RAM</li>
-                    <li><i class="fas fa-check"></i> 150% CPU (2 Cores)</li>
-                    <li><i class="fas fa-check"></i> 40 GB NVMe SSD</li>
-                    <li><i class="fas fa-check"></i> Best for 10-15 Players</li>
-                    <li><i class="fas fa-check"></i> Full FTP File Access</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
-            </div>
+            <!-- ================= BEDROCK EDITION HOSTING (7 PLANS - SASTA RATE) ================= -->
+            <div class="store-box">
+                <h2 style="font-size: 2rem; font-weight: 800; text-transform: uppercase; border-left: 5px solid #1abc9c; padding-left: 15px; margin-bottom: 30px; color: #fff;"><i class="fas fa-mobile-alt" style="color: #1abc9c; margin-right: 10px;"></i> Bedrock / Pocket Edition Plans (Pocket-Friendly)</h2>
+                
+                <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px;">
+                    
+                    <!-- Bedrock Plan 1 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #95a5a6;">PE Starter</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #1abc9c;">₹79<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 2 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 15 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> 10 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
 
-            <!-- Plan 3: Most Popular / Value For Money -->
-            <div class="card" style="border-color: var(--primary);">
-                <div class="popular-tag">Popular</div>
-                <i class="fas fa-fire plan-icon"></i>
-                <h3>Iron Plan</h3>
-                <span class="badge">Best Seller</span>
-                <div class="price">₹349<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 6 GB High-Speed RAM</li>
-                    <li><i class="fas fa-check"></i> 200% CPU (2 Cores)</li>
-                    <li><i class="fas fa-check"></i> 60 GB NVMe SSD</li>
-                    <li><i class="fas fa-check"></i> Plugins + Mods Allowed</li>
-                    <li><i class="fas fa-check"></i> DDoS Protection Included</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
-            </div>
+                    <!-- Bedrock Plan 2 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">PE Basic</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹149<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 4 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 30 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> 25 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
 
-            <!-- Plan 4: Semi-Pro Plan -->
-            <div class="card">
-                <i class="fas fa-gem plan-icon"></i>
-                <h3>Gold Plan</h3>
-                <span class="badge">Advanced</span>
-                <div class="price">₹499<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 8 GB High-Speed RAM</li>
-                    <li><i class="fas fa-check"></i> 300% CPU (3 Cores)</li>
-                    <li><i class="fas fa-check"></i> 80 GB NVMe SSD</li>
-                    <li><i class="fas fa-check"></i> Zero Lag with Heavy Mods</li>
-                    <li><i class="fas fa-check"></i> 1-Click Plugin Installer</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
-            </div>
+                    <!-- Bedrock Plan 3 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">PE Advanced</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹229<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 6 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 45 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> 50 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
 
-            <!-- Plan 5: Pro Gamer Plan -->
-            <div class="card">
-                <i class="fas fa-dragon plan-icon"></i>
-                <h3>Diamond Plan</h3>
-                <span class="badge">Professional</span>
-                <div class="price">₹699<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 12 GB Extreme RAM</li>
-                    <li><i class="fas fa-check"></i> 400% CPU (4 Cores)</li>
-                    <li><i class="fas fa-check"></i> 120 GB NVMe SSD</li>
-                    <li><i class="fas fa-check"></i> Unlimited Player Slots</li>
-                    <li><i class="fas fa-check"></i> Dedicated Sub-domain</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
-            </div>
+                    <!-- Bedrock Plan 4 (Highlighted) -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.85); backdrop-filter: blur(10px); border: 2px solid #1abc9c; padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 15px 40px rgba(26, 188, 156, 0.2); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: -25px; background: #1abc9c; color: #fff; font-size: 0.6rem; font-weight: 800; text-transform: uppercase; padding: 3px 25px; transform: rotate(45deg);">Best Value</div>
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #1abc9c;">PE Pro</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹299<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 8 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 60 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> 100 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
 
-            <!-- Plan 6: Ultimate Reaper Plan -->
-            <div class="card" style="border-color: #f1c40f;">
-                <i class="fas fa-skull-crossbones plan-icon" style="color: #f1c40f;"></i>
-                <h3 style="color: #f1c40f;">Reaper Beast</h3>
-                <span class="badge" style="background: #f1c40f; color: black;">Ultimate Power</span>
-                <div class="price">₹999<span>/mo</span></div>
-                <ul class="features">
-                    <li><i class="fas fa-check"></i> 16 GB Ryzen Powered RAM</li>
-                    <li><i class="fas fa-check"></i> Max CPU Performance</li>
-                    <li><i class="fas fa-check"></i> Unlimited NVMe Storage</li>
-                    <li><i class="fas fa-check"></i> Large Public SMP Setup</li>
-                    <li><i class="fas fa-check"></i> VIP Priority Support</li>
-                </ul>
-                <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Order Now</a>
+                    <!-- Bedrock Plan 5 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">PE Ultimate</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹449<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 12 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 90 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> 150 Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Bedrock Plan 6 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #fff;">PE Extreme</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #fff;">₹599<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #1abc9c; margin-right: 5px;"></i> 16 GB RAM</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #1abc9c; margin-right: 5px;"></i> 120 GB SSD Storage</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-users" style="color: #1abc9c; margin-right: 5px;"></i> Unlimited Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #1abc9c; border: none; font-size: 0.85rem; padding: 12px;">Order Now</a>
+                    </div>
+
+                    <!-- Bedrock Plan 7 -->
+                    <div class="card" style="background: rgba(20, 20, 26, 0.8); backdrop-filter: blur(10px); border: 2px solid #34495e; padding: 25px 15px; border-radius: 12px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
+                        <h4 style="font-size: 1.4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; color: #34495e;">PE Overlord</h4>
+                        <div class="price" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px; color: #34495e;">₹799<span style="font-size: 0.8rem; color: #b5b5bc;">/mo</span></div>
+                        <ul class="list" style="list-style: none; text-align: left; margin-bottom: 25px; font-size: 0.9rem; color: #b5b5bc; padding: 0 10px;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-microchip" style="color: #34495e; margin-right: 5px;"></i> Dedicated 20GB</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-hdd" style="color: #34495e; margin-right: 5px;"></i> 180 GB NVMe SSD</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-bolt" style="color: #34495e; margin-right: 5px;"></i> Max Performance</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="display: block; width: 100%; background: #34495e; border: none; font-size: 0.85rem; padding: 12px; color: white;">Order Now</a>
+                    </div>
+
+                </div>
             </div>
 
         </div>
     </section>
 
+    <!-- FOOTER SECTION -->
     <footer>
         <p>&copy; 2026 Reapercraft Hosting. Not affiliated with Mojang Studios.</p>
     </footer>
