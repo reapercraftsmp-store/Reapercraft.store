@@ -1,72 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Store</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reapercraft | Webstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; }
+        body { background-color: var(--bg-dark); color: var(--text-light); padding-top: 100px; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
+        .logo span { color: var(--primary); }
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
+        nav a:hover, nav a.active { color: var(--primary); }
 
+        section { padding: 50px 8%; text-align: center; }
+        section h1 { font-size: 2.5rem; text-transform: uppercase; margin-bottom: 30px; }
+        section h1 span { color: var(--primary); }
+
+        .store-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .store-box { background: rgba(24, 24, 31, 0.6); border: 2px dashed #3a3a45; padding: 30px; border-radius: 15px; }
+        .store-box h2 { font-size: 1.6rem; margin-bottom: 25px; border-bottom: 2px solid var(--primary); padding-bottom: 8px; display: inline-block; text-transform: uppercase; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
+        .card { background: var(--bg-card); border: 1px solid #2a2a35; border-radius: 8px; padding: 25px 15px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .price { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin: 15px 0; }
+        
+        .list { list-style: none; text-align: left; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-gray); }
+        .list li { margin-bottom: 8px; }
+        .list li i { color: var(--primary); margin-right: 5px; }
+
+        .btn { display: block; padding: 8px; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+        .btn:hover { background: #b01021; }
+
+        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 60px; }
+        @media (max-width: 1024px) { .store-sections { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { nav { display: none; } }
+    </style>
+</head>
 <body>
 
-<header>
-  <div class="logo">⚔️ REAPERCRAFTSMP</div>
+    <header>
+        <div class="logo">Reaper<span>craft</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="server.html">Server</a>
+            <a href="store.html" class="active">Store</a>
+            <a href="discord.html">Discord</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="hosting.html">🚀 Hosting</a>
-    <a href="server.html">🖥️ Server</a>
-    <a href="store.html">🛒 Store</a>
-    <a href="discord.html">💬 Discord</a>
-    <a href="support.html">🆘 Support</a>
-  </nav>
-</header>
+    <section>
+        <h1>Reapercraft <span>In-Game Webstore</span></h1>
 
-<section class="section">
+        <div class="store-sections">
+            <!-- RANKS -->
+            <div class="store-box">
+                <h2>Vip & Mvp Ranks</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h4>VIP Rank</h4>
+                        <div class="price">₹99</div>
+                        <ul class="list">
+                            <li><i class="fas fa-star"></i> [VIP] Tag Prefix</li>
+                            <li><i class="fas fa-star"></i> /fly Permission</li>
+                            <li><i class="fas fa-star"></i> 3x Set Homes</li>
+                        </ul>
+                        <a href="" target="_blank" class="btn">Buy Via Discord</a>
+                    </div>
+                    <div class="card">
+                        <h4>MVP Rank</h4>
+                        <div class="price">₹249</div>
+                        <ul class="list">
+                            <li><i class="fas fa-star"></i> All VIP Perks</li>
+                            <li><i class="fas fa-star"></i> /heal Command</li>
+                            <li><i class="fas fa-star"></i> Join Particle Effect</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Via Discord</a>
+                    </div>
+                </div>
+            </div>
 
-  <h2>👑 RANKS</h2>
+            <!-- KEY CRATES -->
+            <div class="store-box">
+                <h2>Server Loot Crates</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h4>Mythic Key</h4>
+                        <div class="price">₹49</div>
+                        <ul class="list">
+                            <li><i class="fas fa-key"></i> 1x Crate Key</li>
+                            <li><i class="fas fa-key"></i> God Gear Chance</li>
+                            <li><i class="fas fa-key"></i> 10% Spawner Buff</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Via Discord</a>
+                    </div>
+                    <div class="card">
+                        <h4>Legend Key</h4>
+                        <div class="price">₹149</div>
+                        <ul class="list">
+                            <li><i class="fas fa-key"></i> 3x Legendary Keys</li>
+                            <li><i class="fas fa-key"></i> Guaranteed custom tool</li>
+                            <li><i class="fas fa-key"></i> +25,000 Cash</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Via Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>VIP</h3>
-    <p>₹49</p>
-    <a class="btn" href="https://discord.gg/eFbpdq5hZH">💳 Buy via Discord</a>
-  </div>
-
-  <div class="card">
-    <h3>MVP</h3>
-    <p>₹99</p>
-    <a class="btn" href="https://discord.gg/eFbpdq5hZH">💳 Buy via Discord</a>
-  </div>
-
-  <div class="card">
-    <h3>PRO</h3>
-    <p>₹149</p>
-    <a class="btn" href="https://discord.gg/eFbpdq5hZH">💳 Buy via Discord</a>
-  </div>
-
-  <div class="card">
-    <h3>ELITE</h3>
-    <p>₹249</p>
-    <a class="btn" href="https://discord.gg/eFbpdq5hZH">💳 Buy via Discord</a>
-  </div>
-
-  <div class="card">
-    <h3>LEGEND</h3>
-    <p>₹399</p>
-    <a class="btn" href="https://discord.gg/eFbpdq5hZH">💳 Buy via Discord</a>
-  </div>
-
-</section>
-
-<section class="section">
-
-  <h2>🎁 CRATE KEYS</h2>
-
-  <div class="card">Basic - ₹20 <a class="btn" href="https://discord.gg/eFbpdq5hZH">Buy</a></div>
-  <div class="card">Rare - ₹50 <a class="btn" href="https://discord.gg/eFbpdq5hZH">Buy</a></div>
-  <div class="card">Epic - ₹99 <a class="btn" href="https://discord.gg/eFbpdq5hZH">Buy</a></div>
-  <div class="card">Mythic - ₹199 <a class="btn" href="https://discord.gg/eFbpdq5hZH">Buy</a></div>
-  <div class="card">Legendary - ₹299 <a class="btn" href="https://discord.gg/eFbpdq5hZH">Buy</a></div>
-
-</section>
+    <footer>
+        <p>&copy; 2026 Reapercraft Store. Not affiliated with Mojang Studios.</p>
+    </footer>
 
 </body>
 </html>

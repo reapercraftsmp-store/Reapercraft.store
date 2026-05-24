@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>⚔️ ReapercraftSMP</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reapercraft Store | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; }
+        body { background-color: var(--bg-dark); color: var(--text-light); }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
+        .logo span { color: var(--primary); }
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; transition: 0.3s; font-size: 0.95rem; }
+        nav a:hover, nav a.active { color: var(--primary); }
 
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; background: linear-gradient(rgba(15,15,18,0.85), rgba(15,15,18,0.95)), url('https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=2000') no-repeat center center/cover; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; text-transform: uppercase; }
+        .hero h1 span { color: var(--primary); text-shadow: 0 0 20px rgba(207, 21, 43, 0.5); }
+        .hero p { font-size: 1.2rem; color: var(--text-gray); max-width: 700px; margin-bottom: 40px; }
+        
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+        .btn { display: inline-block; padding: 12px 30px; background-color: var(--primary); color: white; text-decoration: none; font-weight: 600; border-radius: 5px; text-transform: uppercase; transition: 0.3s; box-shadow: 0 5px 15px rgba(207, 21, 43, 0.3); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(207, 21, 43, 0.5); }
+        .btn-sec { background-color: #2a2a35; box-shadow: none; }
+        .btn-sec:hover { background-color: #3a3a45; box-shadow: none; }
+
+        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 40px; }
+        @media (max-width: 900px) { nav { display: none; } .hero h1 { font-size: 2.2rem; } }
+    </style>
+</head>
 <body>
 
-<header>
-  <div class="logo">⚔️ REAPERCRAFTSMP</div>
+    <header>
+        <div class="logo">Reaper<span>craft</span></div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="server.html">Server</a>
+            <a href="store.html">Store</a>
+            <a href="discord.html">Discord</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="hosting.html">🚀 Hosting</a>
-    <a href="server.html">🖥️ Server</a>
-    <a href="store.html">🛒 Store</a>
-    <a href="discord.html">💬 Discord</a>
-    <a href="support.html">🆘 Support</a>
-  </nav>
-</header>
+    <div class="hero">
+        <h1>Welcome To <span>Reapercraft</span> Hub</h1>
+        <p>Your one-stop destination for lag-free Minecraft hosting, community server info, premium webstore ranks, and 24/7 dedicated assistance.</p>
+        <div class="btn-group">
+            <a href="hosting.html" class="btn"><i class="fas fa-server"></i> Get Hosting</a>
+            <a href="server.html" class="btn btn-sec"><i class="fas fa-gamepad"></i> Our Server</a>
+            <a href="store.html" class="btn btn-sec"><i class="fas fa-shopping-cart"></i> Browse Shop</a>
+        </div>
+    </div>
 
-<section class="home">
-  <div class="home-box">
-    <h1>⚡ ReapercraftSMP</h1>
-    <p>🔥 Minecraft Hosting • Java + Bedrock • 24/7 Support</p>
-
-    <a class="btn" href="hosting.html">🚀 Get Hosting</a>
-    <a class="btn2" href="store.html">🛒 Visit Store</a>
-  </div>
-</section>
+    <footer>
+        <p>&copy; 2026 Reapercraft Store. Not affiliated with Mojang Studios.</p>
+    </footer>
 
 </body>
 </html>
