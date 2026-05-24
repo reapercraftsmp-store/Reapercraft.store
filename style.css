@@ -6,21 +6,18 @@
 }
 
 body{
-  background:url("minecraft-bg.jpg") no-repeat center center fixed;
-  background-size:cover;
+  background:#0b0b12;
   color:white;
 }
 
-/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
   padding:15px 8%;
+  background:rgba(0,0,0,0.6);
   position:fixed;
   width:100%;
   top:0;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(10px);
 }
 
 .logo{
@@ -30,7 +27,7 @@ header{
 
 nav a{
   color:white;
-  margin-left:12px;
+  margin-left:15px;
   text-decoration:none;
 }
 
@@ -38,7 +35,6 @@ nav a:hover{
   color:#a855f7;
 }
 
-/* HOME */
 .home{
   height:100vh;
   display:flex;
@@ -53,44 +49,24 @@ nav a:hover{
   border-radius:15px;
 }
 
-/* SECTION */
 .section{
   padding:100px 8%;
   margin-top:80px;
   text-align:center;
 }
 
-/* CARD */
 .card{
   display:inline-block;
   background:rgba(0,0,0,0.6);
   padding:15px;
   margin:10px;
   border-radius:12px;
-  transition:0.3s;
 }
 
-.card:hover{
-  transform:scale(1.05);
-  box-shadow:0 0 15px #a855f7;
-}
-
-/* BUTTON */
 .btn{
   display:inline-block;
   padding:10px 15px;
-  margin:10px;
   background:#a855f7;
-  color:white;
-  border-radius:8px;
-  text-decoration:none;
-}
-
-.btn2{
-  display:inline-block;
-  padding:10px 15px;
-  margin:10px;
-  border:1px solid white;
   color:white;
   border-radius:8px;
   text-decoration:none;
