@@ -1,91 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reapercraft | India's Ultimate Minecraft Network</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        :root { --primary: #cf152b; --text-light: #ffffff; --text-gray: #b5b5bc; }
-        
-        body { 
-            background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('reaper.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: var(--text-light); 
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-top: 100px;
-        }
-        
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
-        .logo span { color: var(--primary); }
-        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
-        nav a:hover, nav a.active { color: var(--primary); }
+/* ==========================================================================
+   UPDATED BACKGROUND & TEXT TRANSFORMATION (style.css)
+   ========================================================================== */
 
-        .hero-section { text-align: center; padding: 80px 5%; max-width: 900px; margin: auto; }
-        
-        /* Choti hype line heading ke upar */
-        .hero-tagline { color: var(--primary); font-size: 0.95rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px; display: inline-block; background: rgba(207, 21, 43, 0.1); padding: 5px 15px; border-radius: 5px; border: 1px solid rgba(207, 21, 43, 0.2); }
-        
-        /* Badi and Solid Heading */
-        .hero-section h1 { font-size: 4rem; font-weight: 900; text-transform: uppercase; line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px; text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85); }
-        .hero-section h1 span { color: var(--primary); display: block; font-size: 4.5rem; letter-spacing: 1px; }
-        
-        /* Premium Paragraph */
-        .hero-section p { font-size: 1.25rem; color: var(--text-gray); margin-bottom: 45px; line-height: 1.7; text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6); max-width: 750px; margin-left: auto; margin-right: auto; }
-        
-        .btn-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .btn { display: inline-block; padding: 16px 38px; color: white; text-decoration: none; border-radius: 6px; font-weight: 700; text-transform: uppercase; transition: 0.3s; letter-spacing: 1px; font-size: 0.95rem; }
-        .btn-primary { background: var(--primary); box-shadow: 0 4px 15px rgba(207, 21, 43, 0.3); }
-        .btn-primary:hover { background: #b01021; box-shadow: 0 6px 20px rgba(207, 21, 43, 0.6); transform: translateY(-3px); }
-        .btn-secondary { background: rgba(24, 24, 31, 0.8); border: 2px solid #2a2a35; backdrop-filter: blur(5px); }
-        .btn-secondary:hover { border-color: var(--primary); background: rgba(207, 21, 43, 0.15); transform: translateY(-3px); color: #fff; }
+body { 
+    /* Dark overlay ko bahut halka kar diya hai taaki aapki reaper.jpg saaf dikhe */
+    background: linear-gradient(rgba(10, 10, 12, 0.4), rgba(10, 10, 12, 0.6)), url('reaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-light); 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 110px;
+}
 
-        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; width: 100%; }
-        @media (max-width: 900px) { nav { display: none; } .hero-section h1 { font-size: 2.5rem; } .hero-section h1 span { font-size: 2.8rem; } .hero-section p { font-size: 1.1rem; } }
-    </style>
-</head>
-<body>
+/* --- HERO SECTION TRANSFORMATION --- */
+.hero-section {
+    text-align: center;
+    padding: 50px 40px;
+    max-width: 850px;
+    margin: auto;
+    
+    /* GLASSMORPHISM EFFECT: Isse text ke peeche ka background blur hoga aur text chamkega */
+    background: rgba(10, 10, 12, 0.65); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(207, 21, 43, 0.15);
+}
 
-    <header>
-        <div class="logo">Reaper<span>craft</span></div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="hosting.html">Hosting</a>
-            <a href="server.html">Server</a>
-            <a href="store.html">Store</a>
-            <a href="discord.html">Discord</a>
-            <a href="support.html">Support</a>
-        </nav>
-    </header>
+.hero-tagline {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    display: inline-block;
+    background: var(--primary); /* Button jaisa solid custom red badge */
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
 
-    <div class="hero-section">
-        <!-- Naya Hype Tag -->
-        <span class="hero-tagline">Welcome To The Realm of Reapers</span>
-        
-        <!-- Kuch Naya Khatarnak Text -->
-        <h1>Gear Up For <br><span>Reapercraft SMP</span></h1>
-        
-        <!-- Ekdum Professional Text Description -->
-        <p>India's premier high-performance Minecraft community built for true players. Dive into an elite lag-free SMP, get ultra-affordable game servers starting at just ₹119, or claim powerful custom ranks and loot crates to dominate the leaderboard!</p>
-        
-        <div class="btn-group">
-            <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary"><i class="fab fa-discord"></i> Join The Discord</a>
-            <a href="store.html" class="btn btn-secondary"><i class="fas fa-shopping-cart"></i> Browse Webstore</a>
-        </div>
-    </div>
+.hero-section h1 {
+    font-size: 3.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    /* Heavy 3D Gaming Shadow Effect for text */
+    text-shadow: 3px 3px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 0px 8px 20px rgba(0,0,0,0.9);
+}
 
-    <footer>
-        <p>&copy; 2026 Reapercraft Network. Not affiliated with Mojang Studios.</p>
-    </footer>
+.hero-section h1 span {
+    color: var(--primary);
+    display: block;
+    font-size: 4.8rem;
+    letter-spacing: 3px;
+    font-weight: 900;
+    text-shadow: 0 0 20px rgba(207, 21, 43, 0.6), 4px 4px 0px #000;
+}
 
-</body>
-</html>
+.hero-section p {
+    font-size: 1.2rem;
+    color: #ffffff; /* Text color full white kar diya taaki dundhla na lage */
+    margin-bottom: 40px;
+    line-height: 1.8;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
