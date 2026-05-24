@@ -5,37 +5,123 @@
   font-family:Arial, sans-serif;
 }
 
+/* ===== BACKGROUND ===== */
 body{
-  margin:0;
-  padding:0;
-  font-family:Arial, sans-serif;
-  color:white;
   min-height:100vh;
+  color:white;
 
   background: url("minecraft-bg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
+/* DARK OVERLAY */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:-1;
+}
+
+/* ===== HEADER ===== */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:25px 8%;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.3);
   backdrop-filter:blur(10px);
   position:fixed;
   width:100%;
   top:0;
+  z-index:100;
 }
 
 .logo{
   font-size:28px;
   font-weight:bold;
   color:#a855f7;
+  text-shadow:0 0 10px #a855f7;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:25px;
-  transition:0.
+  margin-left:20px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#a855f7;
+  text-shadow:0 0 10px #a855f7;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:120px 8%;
+  flex-wrap:wrap;
+}
+
+.hero h1{
+  font-size:45px;
+  text-shadow:0 0 15px black;
+}
+
+.hero p{
+  margin-top:15px;
+  color:#ddd;
+  max-width:500px;
+}
+
+/* ===== BUTTONS ===== */
+.buttons{
+  margin-top:20px;
+}
+
+.btn, .btn2{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:8px;
+  margin-right:10px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn{
+  background:#a855f7;
+  color:white;
+}
+
+.btn:hover{
+  box-shadow:0 0 20px #a855f7;
+  transform:scale(1.05);
+}
+
+.btn2{
+  border:1px solid white;
+  color:white;
+}
+
+.btn2:hover{
+  box-shadow:0 0 15px white;
+  transform:scale(1.05);
+}
+
+/* ===== CARDS ===== */
+.cards{
+  margin-top:30px;
+}
+
+.card{
+  background:rgba(0,0,0,0.4);
+  padding:20px;
+  border-radius:12px;
+  backdrop-filter:blur(8px);
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
