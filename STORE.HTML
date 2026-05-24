@@ -3,45 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reapercraft | Webstore</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Reapercraft | Official Webstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        :root { --primary: #cf152b; --bg-dark: #0f0f12; --bg-card: #18181f; --text-light: #ffffff; --text-gray: #a0a0a5; }
-        body { background-color: var(--bg-dark); color: var(--text-light); padding-top: 100px; }
-        
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #18181f; border-bottom: 2px solid var(--primary); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .logo { font-size: 24px; font-weight: 800; text-transform: uppercase; }
-        .logo span { color: var(--primary); }
-        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 600; }
-        nav a:hover, nav a.active { color: var(--primary); }
-
-        section { padding: 50px 5%; text-align: center; }
-        section h1 { font-size: 2.5rem; text-transform: uppercase; margin-bottom: 30px; }
-        section h1 span { color: var(--primary); }
-
-        .store-sections { display: flex; flex-direction: column; gap: 50px; }
-        .store-box { background: rgba(24, 24, 31, 0.6); border: 2px dashed #3a3a45; padding: 40px 20px; border-radius: 15px; }
-        .store-box h2 { font-size: 1.8rem; margin-bottom: 35px; border-bottom: 2px solid var(--primary); padding-bottom: 8px; display: inline-block; text-transform: uppercase; }
-        
-        /* 5 Cards Ke Liye Grid Setup */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-        .card { background: var(--bg-card); border: 1px solid #2a2a35; border-radius: 8px; padding: 25px 15px; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 5px 15px rgba(207, 21, 43, 0.2); }
-        .card h4 { font-size: 1.3rem; margin-bottom: 10px; text-transform: uppercase; }
-        .price { font-size: 2rem; font-weight: 800; color: var(--primary); margin: 15px 0; }
-        
-        .list { list-style: none; text-align: left; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-gray); }
-        .list li { margin-bottom: 8px; }
-        .list li i { color: var(--primary); margin-right: 5px; }
-
-        .btn { display: block; padding: 10px; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; font-weight: 600; text-transform: uppercase; transition: 0.3s; text-align: center; margin-top: auto; }
-        .btn:hover { background: #b01021; }
-
-        footer { background: #09090b; padding: 25px; text-align: center; color: var(--text-gray); font-size: 0.9rem; border-top: 1px solid #18181f; margin-top: 60px; }
-        @media (max-width: 900px) { nav { display: none; } }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -59,136 +25,99 @@
 
     <section>
         <h1>Reapercraft <span>In-Game Webstore</span></h1>
-
+        
         <div class="store-sections">
-            
-            <!-- 5 SERVER RANKS -->
             <div class="store-box">
-                <h2>Server Ranks</h2>
+                <h2>Official Server Ranks</h2>
+                
                 <div class="grid">
-                    <!-- Rank 1 -->
+                    
                     <div class="card">
-                        <h4>Coal Rank</h4>
-                        <div class="price">₹49</div>
+                        <h4>Starter</h4>
+                        <div class="price">₹29<span>/one-time</span></div>
                         <ul class="list">
-                            <li><i class="fas fa-star"></i> [Coal] Prefix Tag</li>
-                            <li><i class="fas fa-star"></i> +2 Kit Starter</li>
+                            <li><i class="fas fa-star"></i> [Starter] Prefix Tag</li>
+                            <li><i class="fas fa-star"></i> +2 Kit Starter Tools</li>
                             <li><i class="fas fa-star"></i> 2x Homes Limit</li>
                         </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
                     </div>
-                    <!-- Rank 2 -->
+
                     <div class="card">
-                        <h4>Iron Rank</h4>
-                        <div class="price">₹99</div>
+                        <h4>VIP</h4>
+                        <div class="price">₹59<span>/one-time</span></div>
                         <ul class="list">
-                            <li><i class="fas fa-star"></i> [Iron] Prefix Tag</li>
+                            <li><i class="fas fa-star"></i> [VIP] Green Tag</li>
                             <li><i class="fas fa-star"></i> /feed Command</li>
                             <li><i class="fas fa-star"></i> 4x Homes Limit</li>
+                            <li><i class="fas fa-star"></i> VIP Discord Role</li>
                         </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
                     </div>
-                    <!-- Rank 3 -->
-                    <div class="card" style="border-color: var(--primary);">
-                        <h4 style="color: var(--primary);">Gold Rank</h4>
-                        <div class="price">₹199</div>
+
+                    <div class="card">
+                        <h4>VIP+</h4>
+                        <div class="price">₹119<span>/one-time</span></div>
                         <ul class="list">
-                            <li><i class="fas fa-star"></i> [Gold] Prefix Tag</li>
+                            <li><i class="fas fa-star"></i> [VIP+] Blue Tag</li>
+                            <li><i class="fas fa-star"></i> /hat Command Access</li>
+                            <li><i class="fas fa-star"></i> 6x Homes Limit</li>
+                            <li><i class="fas fa-star"></i> Keep XP on Death</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
+                    </div>
+
+                    <div class="card" style="border-color: var(--primary);">
+                        <div class="popular-tag">Popular</div>
+                        <h4 style="color: var(--primary);">MVP</h4>
+                        <div class="price">₹199<span>/one-time</span></div>
+                        <ul class="list">
+                            <li><i class="fas fa-star"></i> [MVP] Crimson Tag</li>
                             <li><i class="fas fa-star"></i> /fly Permission</li>
                             <li><i class="fas fa-star"></i> Custom Join Message</li>
+                            <li><i class="fas fa-star"></i> 10x Homes Limit</li>
                         </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
                     </div>
-                    <!-- Rank 4 -->
+
                     <div class="card">
-                        <h4>Diamond Rank</h4>
-                        <div class="price">₹349</div>
+                        <h4>Elite</h4>
+                        <div class="price">₹299<span>/one-time</span></div>
                         <ul class="list">
-                            <li><i class="fas fa-star"></i> [Diamond] Tag</li>
-                            <li><i class="fas fa-star"></i> /heal Command</li>
-                            <li><i class="fas fa-star"></i> 8x Homes Limit</li>
-                            <li><i class="fas fa-star"></i> Keep Inventory Perks</li>
+                            <li><i class="fas fa-star"></i> [Elite] Gold Tag</li>
+                            <li><i class="fas fa-star"></i> /heal (5m Cooldown)</li>
+                            <li><i class="fas fa-star"></i> 15x Homes Limit</li>
+                            <li><i class="fas fa-star"></i> /workbench Everywhere</li>
                         </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
                     </div>
-                    <!-- Rank 5 -->
+
                     <div class="card">
-                        <h4>Reaper Rank</h4>
-                        <div class="price">₹499</div>
+                        <h4>Legend</h4>
+                        <div class="price">₹399<span>/one-time</span></div>
                         <ul class="list">
-                            <li><i class="fas fa-crown" style="color: #f1c40f;"></i> [REAPER] TOP Tag</li>
-                            <li><i class="fas fa-star"></i> All Commands Access</li>
-                            <li><i class="fas fa-star"></i> Infinite Homes</li>
-                            <li><i class="fas fa-star"></i> Monthly Special Kit</li>
+                            <li><i class="fas fa-star"></i> [LEGEND] Cyan Tag</li>
+                            <li><i class="fas fa-star"></i> /near and /ptime</li>
+                            <li><i class="fas fa-star"></i> 25x Homes Limit</li>
+                            <li><i class="fas fa-star"></i> God Kit Access Weekly</li>
                         </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary">Buy Now</a>
                     </div>
+
+                    <div class="card" style="border-color: #f1c40f;">
+                        <h4 style="color: #f1c40f;">Mythic</h4>
+                        <div class="price" style="color: #f1c40f;">₹499<span>/one-time</span></div>
+                        <ul class="list">
+                            <li><i class="fas fa-crown" style="color: #f1c40f;"></i> [MYTHIC] Top Tag</li>
+                            <li><i class="fas fa-star"></i> All Commands Unlocked</li>
+                            <li><i class="fas fa-star"></i> Infinite Homes Limit</li>
+                            <li><i class="fas fa-star"></i> Priority Queue Slots</li>
+                        </ul>
+                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn btn-primary" style="background: #f1c40f; color: black;">Buy Now</a>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- 5 CRATE KEYS -->
-            <div class="store-box">
-                <h2>Server Loot Crates</h2>
-                <div class="grid">
-                    <!-- Key 1 -->
-                    <div class="card">
-                        <h4>Common Key</h4>
-                        <div class="price">₹19</div>
-                        <ul class="list">
-                            <li><i class="fas fa-key"></i> 1x Common Crate Key</li>
-                            <li><i class="fas fa-key"></i> Basic Tools & Food</li>
-                            <li><i class="fas fa-key"></i> 5,000 In-Game Cash</li>
-                        </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
-                    </div>
-                    <!-- Key 2 -->
-                    <div class="card">
-                        <h4>Rare Key</h4>
-                        <div class="price">₹39</div>
-                        <ul class="list">
-                            <li><i class="fas fa-key"></i> 1x Rare Crate Key</li>
-                            <li><i class="fas fa-key"></i> Enchanged Iron Gear</li>
-                            <li><i class="fas fa-key"></i> 15,000 In-Game Cash</li>
-                        </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
-                    </div>
-                    <!-- Key 3 -->
-                    <div class="card">
-                        <h4>Mythic Key</h4>
-                        <div class="price">₹69</div>
-                        <ul class="list">
-                            <li><i class="fas fa-key"></i> 1x Mythic Crate Key</li>
-                            <li><i class="fas fa-key"></i> Diamond Armor Chance</li>
-                            <li><i class="fas fa-key"></i> 30,000 In-Game Cash</li>
-                        </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
-                    </div>
-                    <!-- Key 4 -->
-                    <div class="card" style="border-color: var(--primary);">
-                        <h4 style="color: var(--primary);">Legend Key</h4>
-                        <div class="price">₹119</div>
-                        <ul class="list">
-                            <li><i class="fas fa-key"></i> 1x Legend Crate Key</li>
-                            <li><i class="fas fa-key"></i> God Netheite Items</li>
-                            <li><i class="fas fa-key"></i> 15% Spawner Rate</li>
-                        </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
-                    </div>
-                    <!-- Key 5 -->
-                    <div class="card">
-                        <h4>Immortal Key</h4>
-                        <div class="price">₹199</div>
-                        <ul class="list">
-                            <li><i class="fas fa-bolt" style="color: #e74c3c;"></i> 1x OP Immortal Key</li>
-                            <li><i class="fas fa-key"></i> Unban/Unmute Vouchers</li>
-                            <li><i class="fas fa-key"></i> Custom Weapon Skin</li>
-                            <li><i class="fas fa-key"></i> 100,000 Max Cash</li>
-                        </ul>
-                        <a href="https://discord.gg/eFbpdq5hZH" target="_blank" class="btn">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
