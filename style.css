@@ -5,21 +5,16 @@
   font-family:Arial, sans-serif;
 }
 
-/* BACKGROUND */
 body{
   min-height:100vh;
   color:white;
-
-  background: url("minecraft-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background:url("minecraft-bg.jpg") no-repeat center center fixed;
+  background-size:cover;
 }
 
-/* DARK OVERLAY */
 body::before{
   content:"";
   position:fixed;
-  top:0;
-  left:0;
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.6);
@@ -32,25 +27,23 @@ header{
   justify-content:space-between;
   align-items:center;
   padding:20px 8%;
-  background:rgba(0,0,0,0.3);
-  backdrop-filter:blur(10px);
   position:fixed;
   width:100%;
   top:0;
-  z-index:100;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(10px);
 }
 
 .logo{
-  font-size:26px;
-  font-weight:bold;
+  font-size:24px;
   color:#a855f7;
-  text-shadow:0 0 10px #a855f7;
+  font-weight:bold;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:20px;
+  margin-left:15px;
   transition:0.3s;
 }
 
@@ -58,47 +51,27 @@ nav a:hover{
   color:#a855f7;
 }
 
-/* HERO LAYOUT */
+/* HERO */
 .hero{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:120px 8%;
-  flex-wrap:wrap;
-}
-
-/* CENTER */
-.center{
+  padding:140px 8%;
   text-align:center;
-  max-width:450px;
-  margin:auto;
 }
 
 .center h1{
   font-size:42px;
-  text-shadow:0 0 15px black;
 }
 
 .center p{
-  margin-top:15px;
+  margin-top:10px;
   color:#ddd;
 }
 
-.tag{
-  margin-top:15px;
-  color:#a855f7;
-}
-
 /* BUTTONS */
-.buttons{
-  margin-top:20px;
-}
-
 .btn, .btn2{
   display:inline-block;
-  padding:12px 20px;
+  padding:10px 15px;
+  margin:10px;
   border-radius:8px;
-  margin:5px;
   text-decoration:none;
   transition:0.3s;
 }
@@ -109,8 +82,7 @@ nav a:hover{
 }
 
 .btn:hover{
-  box-shadow:0 0 20px #a855f7;
-  transform:scale(1.05);
+  box-shadow:0 0 15px #a855f7;
 }
 
 .btn2{
@@ -118,34 +90,55 @@ nav a:hover{
   color:white;
 }
 
-.btn2:hover{
-  box-shadow:0 0 10px white;
-  transform:scale(1.05);
+/* SECTIONS */
+.section{
+  padding:80px 8%;
+  text-align:center;
 }
 
-/* SIDE BOXES */
-.side{
-  width:250px;
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
   background:rgba(0,0,0,0.4);
-  padding:15px;
-  border-radius:10px;
+  padding:20px;
+  border-radius:12px;
+  width:220px;
   backdrop-filter:blur(8px);
+  transition:0.3s;
 }
 
-.side h3{
-  color:#a855f7;
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 15px #a855f7;
+}
+
+/* STORE */
+.store{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.plans{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
   margin-top:10px;
 }
 
-.side p{
-  font-size:14px;
-  color:#ddd;
+.plan{
+  background:rgba(0,0,0,0.4);
+  padding:15px;
+  border-radius:10px;
+  transition:0.3s;
 }
 
-.left{
-  text-align:left;
-}
-
-.right{
-  text-align:right;
+.plan:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #a855f7;
 }
